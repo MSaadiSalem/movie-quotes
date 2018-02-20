@@ -137,7 +137,7 @@ def main():
     # Outputs:
     # This function has no outputs
 
-    script_path = "/home/me/Programming/Python/Udacity/lesson20/movie-quotes/movie_quotes.txt"
+    script_path = raw_input("Enter a valid path: ")
     script = read_script(script_path)
     script, curse_words = check_profanity(script)
 
