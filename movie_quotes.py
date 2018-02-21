@@ -51,6 +51,7 @@ def check_profanity(script):
     curse_words = []
     words = script.split()
 
+    print "Checking for curse words....."
     for word in words:
         connection = urllib.urlopen(
             "http://www.wdylike.appspot.com/?q=" + word)
@@ -62,7 +63,7 @@ def check_profanity(script):
             curse_words += [curse]
             profanity_count += 1
 
-    print "Script has %d curse words.\n" % profanity_count
+    print "Script has %d curse word(s).\n" % profanity_count
     return script, curse_words
 
 
